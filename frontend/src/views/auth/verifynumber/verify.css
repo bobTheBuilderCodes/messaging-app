@@ -1,0 +1,12 @@
+input{
+    width: 70px;
+    text-align: center;
+    font-weight: bolder;
+   
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

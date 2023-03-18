@@ -22,7 +22,7 @@ const Register = () => {
           <h1>Create New Account</h1>
         </div>
         <div className="inputContainer">
-          <label htmlFor="username">Enter your username</label>
+          <label htmlFor="username"> Username</label>
           <input
             // value={formData.username}
             name="username"
@@ -35,26 +35,17 @@ const Register = () => {
           />
         </div>
         <div className="inputContainer">
-          <label htmlFor="email">Enter your email</label>
+          <label htmlFor="telephone">Mobile number</label>
           <input
             // value={formData.email}
             name="email"
             type="email"
-            placeholder="Eg. ataadwoa@gmail.com"
+            placeholder="Eg. +233 XXX XXX XXX"
             autoComplete="on"
             onFocus={(e) => setIsTypingPassword(false)}
           />
         </div>
-        <div className="inputContainer">
-          <label htmlFor="password">Enter your password</label>
-          <input
-            // value={formData.password}
-            name="password"
-            type="password"
-            placeholder="Enter your password"
-            onFocus={(e) => setIsTypingPassword(true)}
-          />
-        </div>
+        
         <div>
           <button type="submit">Register Me 🚀</button>
           <div className="footer">
