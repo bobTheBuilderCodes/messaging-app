@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FC } from "react";
+import {BrowserRouter as Router, Route, RouterProps, Routes } from "react-router-dom";
+import Demo from "./components/demo/Demo";
+import Register from "./views/auth/register/Register";
+import VerifyNumber from "./views/auth/verifynumber/VerifyNumber";
+import ChatScreen from "./views/chatscreen/ChatScreen";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Register />} />
+          <Route path="/verify/number" element={<VerifyNumber/>} />
+          <Route path="/chat" element={<ChatScreen />} />
+          <Route path="/demo" element={<Demo />} />
+        </Routes>
+      </Router>
     </div>
   );
-}
+};
 
-export default App;
+export default App
