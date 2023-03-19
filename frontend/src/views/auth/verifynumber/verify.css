@@ -1,11 +1,11 @@
-input{
+ .verify{
     width: 70px;
     text-align: center;
     font-weight: bolder;
    
 }
 
-.inputContainer{
+.verifyContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;

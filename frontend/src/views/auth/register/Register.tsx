@@ -45,11 +45,12 @@ const Register = () => {
             onFocus={(e) => setIsTypingPassword(false)}
           />
         </div>
-        
+
         <div>
-          <button type="submit">Register Me 🚀</button>
+          <button type="submit" style={{ color: "#334054" , fontWeight: '600' , border: 'none' }}>
+            Register Me 🚀
+          </button>
           <div className="footer">
-          
             <a href="/login">I already have an account</a>
           </div>
         </div>

@@ -98,7 +98,7 @@ const ChatScreen = () => {
           <Message />
         </div>
         <div className='inputArea'>
-            <input type="text" placeholder='Send a message' />
+            <input type="text" placeholder='Send a message' id='userInput'/>
             <button>Send</button>
         </div>
      </div>
