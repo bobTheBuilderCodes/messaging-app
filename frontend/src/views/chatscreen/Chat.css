@@ -1,33 +1,41 @@
 .chatContainer{
     display: grid;
     grid-template-columns: 1fr 3fr;
+   
+   
 }
 
 .chatList{
     background-color: #042224;
-    /* background-color: #054347; */
     border-right: 2px solid #112F31;
+    max-height: 100vh;
 }
 
 .chatBox{
     background-image: url('../../assets/images/chatboxBackground.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    max-height: 100vh;
 }
 
-.recipient , .inputArea{
+
+.recipient , .userInfo, .inputArea{
     background-color: #054347;
     height: 7%;
 }
 
 .inputArea{
-    display: flex;
-    
+    display: flex;  
     align-items: center;
 }
-.messagesArea{
-    height: 86%;
+
+.messagesArea , .allChats{
+    max-height: 86%;
+    overflow: scroll;
+}
+
+.allChats{
+    max-height: 93%;
 }
 
 input{
@@ -57,4 +65,48 @@ button{
     border: none;
     cursor: pointer;
 
+} 
+
+.messageContainer{
+    background-color: orange;
+    margin: 10px;
+    padding: 10px;
+    width: fit-content;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.recipientName, .status{
+    color: #8fe4ea;
+    margin: 0 24px;
+}
+
+.recipient{
+    display: flex;
+    align-items: center;
+}
+
+.status{
+    font-style: italic; 
+}
+
+.chatListContainer{
+    border-bottom: 1px solid #112F31;
+    padding: 16px;
+    color: #517b7b;
+    font-size: 20px;
+    opacity: 0.8;
+    cursor: pointer;
+    
+}
+.chatListContainer > p {
+    font-weight: bolder;
+}
+.chatListContainer > small {
+    opacity: 0.6;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
