@@ -24,10 +24,10 @@ const VerifyNumber = () => {
           <h1 className="emoji">{isTypingPassword ? "🙈 " : " 🙊 "}</h1>
           <h1>Verify your number</h1>
         </div>
-        <div className="inputContainer">
-       
+        <div className="verifyContainer">
           <input
             // value={formData.username}
+            className="verify"
             name="username"
             type="text"
             placeholder="X"
@@ -38,6 +38,7 @@ const VerifyNumber = () => {
           />
           <input
             // value={formData.username}
+            className="verify"
             name="username"
             type="text"
             placeholder="X"
@@ -48,6 +49,7 @@ const VerifyNumber = () => {
           />
           <input
             // value={formData.username}
+            className="verify"
             name="username"
             type="text"
             placeholder="X"
@@ -58,6 +60,7 @@ const VerifyNumber = () => {
           />
           <input
             // value={formData.username}
+            className="verify"
             name="username"
             type="text"
             placeholder="X"
@@ -67,10 +70,14 @@ const VerifyNumber = () => {
             autoFocus
           />
         </div>
-        
 
         <div>
-          <button type="submit">Verify Me 🚀</button>
+          <button
+            type="submit"
+            style={{ color: "#334054", fontWeight: "600", border: "none" }}
+          >
+            Verify Me 🚀
+          </button>
           <div className="footer">
             <a href="/">I don't have an account</a>
           </div>
